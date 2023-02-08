@@ -1,0 +1,567 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.banner {
+  /* background-image: linear-gradient(-45deg, #f1d865, #e7e6b1 , #23a6d5, #eff31a); */
+  /* background-image: url("https://previews.123rf.com/images/vectorlab/vectorlab1706/vectorlab170600045/79611062-isometric-ecology-concept-renewable-solar-energy-vector-flat-3d-illustration.jpg" ) ; */
+  background-size: 100% 100%;
+  /* background-image: linear-gradient(to right, #746b57, #FEC203); */
+  /* height: 95vmin; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: black;
+  animation: gradient 15s ease infinite;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.banner > h1 {
+  margin: 4vmax;
+  font: 600 2.5vmax "Roboto";
+}
+
+.banner > p {
+  margin-top: 2vmax;
+  font: 300 1.6vmax "Lucida Sans";
+  text-decoration: none;
+}
+
+.banner > .homeSec > .titles > a > button {
+    margin-top: 30px;
+  margin-bottom: 5vmax;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font: 500 1.2vmax "Roboto";
+}
+
+.banner > .homeSec >.titles > a > button:hover {
+  background-color: #efdb2f;
+  color: black;
+}
+
+/* .banner::after {
+    content: "";
+    width: 100vw;
+    height: 100vmin;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    max-width: 100%;
+    clip-path: polygon(100% 79%, 0% 100%, 100% 100%);
+
+} */
+
+.homeSec {
+    display: flex;
+    margin-bottom: 220px;
+}
+
+@keyframes loader {
+    0% {
+      rotate: 0deg;
+    }
+    25% {
+      rotate: y 90deg;
+      scale: 0.5;
+    }
+    50% {
+      rotate: 360deg;
+    }
+    75% {
+      rotate: x 270deg;
+      border-radius: 50%;
+    }
+    100% {
+      rotate: 360deg;
+    }
+  }
+.homeSec > img{
+    width: 75vh;
+    height: 75vh;
+    object-fit: contain;
+    margin-bottom: 5%;
+    animation: loader 3s infinite; 
+}
+
+.titles{
+    display: block;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+.titles > p{
+    font: 500 2vmax "Roboto";
+}
+.titles > h1{
+    font: 600 3vmax "Roboto";
+}
+
+.titles > p{
+text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #2f5715 0%,
+    #3114b1 29%,
+    #dcff13 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 50vh auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+      font-size: 25px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.titles > h1{
+    text-transform: uppercase;
+      background-image: linear-gradient(
+        -225deg,
+        #2f5715 0%,
+        #3114b1 29%,
+        #dcff13 67%,
+        #fff800 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 50vh auto;
+      background-clip: text;
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+          font-size: 40px;
+    }
+    
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+
+.nav {
+  display: flex;
+}
+
+.headerSection {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* margin-top: 210px; */
+  /* margin-top: 30px; */
+  /* position: relative;
+    right: 10%; */
+}
+
+.headerSection > img {
+  display: flex;
+  position: relative;
+  top: 0%;
+  left: 10%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  top: 0%;
+  /* left: 18%; */
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  right: 30px;
+  top: 30px;
+  z-index: 99;
+}
+.navbar > a {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+  padding: 0 1.5vmax 0 1.5vmax;
+  color: white;
+  font: 500 1.7vmax "Roboto";
+  transition: all 0.5s;
+  /* border: 0.5px solid black;
+   padding: 1vmax;
+   margin: 1vmax; */
+}
+.logo {
+  width: 10vmax;
+  object-fit: contain;
+  /* margin-bottom: 10px; */
+  /* margin-left: 16%; */
+  /* margin-top: 7vmax; */
+}
+.navbar a:hover {
+  border-bottom: 3px solid yellow;
+  transform: scale(1.1);
+}
+
+.homeHeading {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 7vmax auto;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+
+.productCard > img {
+  width: 14vmax;
+}
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCardSpan{
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+
+.productCard > p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+.productCard > span {
+  margin: 0.5vmax;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.532);
+  border-radius: 10px;
+  transform: scale(1.1)
+}
+
+
+
+
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: -100px;
+  background-image: linear-gradient(to bottom, #333, #2730361d);
+}
+
+.hero-content {
+  text-align: center;
+  width: 50%;
+  padding: 2em;
+  margin-top: 100px;
+}
+
+.hero-title {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.hero-description {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 2em;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-btn:hover {
+  background-color: yellow;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-image {
+  width: 50%;
+}
+
+.hero-image img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+@media (max-width: 600px) {
+
+  .hero{
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+  }
+
+  .hero-content {
+    width: 80%;
+  }
+  .hero-title{
+    font-size: 2em;
+  }
+  .hero-description{
+    font-size: 1em;
+  }
+
+  .hero-image {
+    display: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .homeSec{
+        display: block;
+        margin-top: 230px;
+       
+    }
+    .titles{
+    display: block;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60vmax;
+    }
+    .titles > p{
+        font: 500 2vmax "Roboto";
+    }
+    .titles > h1{
+        font: 600 2vmax "Roboto";
+    }
+    .homeSec > img{
+    width: 45vh;
+    height: 45vh;
+    object-fit: contain;
+    margin-bottom: 5%;
+    animation: loader 3s infinite;
+    }
+
+    .titles > p{
+        text-transform: uppercase;
+          background-image: linear-gradient(
+            -225deg,
+            #2f5715 0%,
+            #3114b1 29%,
+            #dcff13 67%,
+            #fff800 100%
+          );
+          background-size: auto auto;
+          background-clip: border-box;
+          background-size: 50vh auto;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: textclip 2s linear infinite;
+              font-size: 15px;
+        }
+        
+        @keyframes textclip {
+          to {
+            background-position: 200% center;
+          }
+        }
+        .titles > h1{
+            text-transform: uppercase;
+              background-image: linear-gradient(
+                -225deg,
+                #2f5715 0%,
+                #3114b1 29%,
+                #dcff13 67%,
+                #fff800 100%
+              );
+              background-size: auto auto;
+              background-clip: border-box;
+              background-size: 50vh auto;
+              background-clip: text;
+        
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              animation: textclip 2s linear infinite;
+                  font-size: 20px;
+            }
+            
+            @keyframes textclip {
+              to {
+                background-position: 200% center;
+              }
+            }
+        
+
+
+  .headerSection {
+    display: none;
+
+  }
+  .banner > p {
+    margin-top: 8vmax;
+    font: 400 2.5vmax "Lucida Sans";
+  }
+
+  .banner > .homeSec > .titles > a > button {
+    margin-top: 2vmax;
+    padding: 2vmax;
+    width: 17vmax;
+    font: 400 2vmax "Roboto";
+  }
+  .homeHeading {
+    font: 500px 2vmax "Roboto";
+    font-size: 2.4vmax;
+    margin-top: 0vmax;
+  }
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+  
+
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+}

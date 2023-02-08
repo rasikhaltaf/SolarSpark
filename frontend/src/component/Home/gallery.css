@@ -1,0 +1,70 @@
+.gallaryContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+
+}
+
+.gal{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 70px;
+    font-size: 34px;
+}
+table{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.532);
+    border-radius: 10px;
+    margin-top: 54px;
+}
+.galMain > img{
+    object-fit: cover;
+    height: 364px;
+    width: 438px;
+}
+.gall img{
+    height: 170px;
+    width: 200px;
+    object-fit: cover;
+    
+}
+
+table>tr>td img{
+    margin: 10px;
+    /* border: 4px solid black; */
+    box-shadow: 3px 3px 10px black, -3px -3px -10px white;
+    transition: all 0.5s;
+}
+table > tr > td >img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.532);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px){
+    .gallaryContainer{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        width: 100%;
+    
+    }
+    table{
+        margin-top: 84px;
+    }
+    table >tr {
+        display: flex;
+        flex-direction: column;
+    }
+    .galMain > img{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+    }
+    .gall > img{
+        height: 200px;
+        width: 200px;
+        object-fit: contain;
+    }
+}
