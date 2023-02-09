@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-
+let DB = 'mongodb+srv://rasikh:malikrasikh786@rasikhapi.nybbgrq.mongodb.net/SolarSpark?retryWrites=true&w=majority'
 const connectDatabase = () => {
-  mongoose.connect(process.env.DB_URI, {
+  mongoose.connect(DB, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
